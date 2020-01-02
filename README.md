@@ -18,7 +18,7 @@ In the \lectures folder there is the material the professor used to teach the co
 12. Object recognition;
 13. Convolutional neural networks.
 
-In the \homework folder is possible to find the six homework I've done during the course. In every folder there are the exercise instructions, some MATLAB files and a report containing my solution. The exercises have been done on the following topics:
+In the \homeworks folder is possible to find the six homework I've done during the course. In every folder there are the exercise instructions, some MATLAB files and a report containing my solution. The exercises have been done on the following topics:
 
 1. Linear algebra and some basics of images;
 2. Image filtering, feature detection and matching, Fourier transformation;
