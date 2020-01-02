@@ -1,0 +1,42 @@
+Despite its generality, StarGAN can only change a particular
+aspect of a face among a discrete number of attributes dened by the annotation
+granularity of the dataset.
+Facial expressions, however, are the result of the combined and coordinated
+action of facial muscles that cannot be categorized in a discrete and low number
+of classes.
+FACS describing facial expressions in terms of the so-called Action Units
+(AUs), which are anatomically related to the contractions of specic facial mus-
+cles.
+7,000 dierent AU combinations -> more than 8 expressions
+Depending on the magnitude of each AU, the expression will transmit the emo-
+tion of fear to a greater or lesser extent. -> the magnitude is another way to create another expression
+not another expression but a stronger one
+purpose of the model -> able to generate anatomically-aware expressions in a continuous domain, without the need of obtaining any
+facial landmarks
+
+First, we consider an AU-conditioned bidirectional adversarial architec-
+ture which, given a single training photo, initially renders a new image under the
+desired expression. This synthesized image is then rendered-back to the original
+pose, hence being directly comparable to the input image. -> first of all we create the new fake face
+and after that we compare it with the input one to see if it is belong the same person
+
+the most important thing -> render images in a continuous domain (gives more possibilities of generations) and which can handle
+images in the wild with complex backgrounds and illumination conditions (allow to have picture of greater quality).
+
+Unpaired image: Our approach is more related to those works exploiting cycle consistency to
+preserve key attributes between the input and the mapped image (mappings transforming the style without altering the original input image content.)
+
+we learn a GAN model con-
+ditioned on a continuous embedding of muscle movements, allowing to generate
+a large range of anatomically possible face expressions as well as smooth facial
+movement transitions in video sequences.
+
+Our aim is to learn a mapping M to translate Iyr (input image with a particular expression) into an output image Iyg
+conditioned on an action-unit target yg (we have only the desired AUs that the output image should satisfy)
+
+mportantly, we neither require pairs of images of
+the same person under dierent expressions, nor the expected target image Iyg
+
+We have slightly modied it by substituting the last convolutional
+layer with two parallel convolutional layers, one to regress the color mask C
+and the other to dene the attention mask A.

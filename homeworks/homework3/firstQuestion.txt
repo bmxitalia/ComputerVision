@@ -1,0 +1,43 @@
+Calibration results after optimization (with uncertainties):
+
+Focal Length:          fc = [ 3560.26781   3568.47068 ] +/- [ 27.21252   27.44694 ]
+Principal point:       cc = [ 2310.49774   1692.41203 ] +/- [ 25.93407   21.74466 ]
+Skew:             alpha_c = [ 0.00000 ] +/- [ 0.00000  ]   => angle of pixel axes = 90.00000 +/- 0.00000 degrees
+Distortion:            kc = [ 0.00542   -0.13376   0.00214   0.00120  0.00000 ] +/- [ 0.02285   0.08811   0.00179   0.00222  0.00000 ]
+Pixel error:          err = [ 2.27696   2.21013 ]
+
+Note: The numerical errors are approximately three times the standard deviations (for reference).
+
+
+Recommendation: Some distortion coefficients are found equal to zero (within their uncertainties).
+                To reject them from the optimization set est_dist=[0;1;1;1;0] and run Calibration
+
+141 134 central vanishing computed 85 intersections
+141 109 central vanishing computed 56 intersections
+
+heading1 =
+
+   -1.1068
+
+
+heading2 =
+
+   -1.1068
+
+
+pitch1 =
+
+    0.2820
+
+
+pitch2 =
+
+    0.3020
+
+problems: noise image (provare altri parametri di gaussian diversi dai default del canny), small resolution image (very bad quality), radial distorsion caused by the gopro lense (difficult to find lines - ascoltare lezione)
+per giustificare l'algoritmo scelto basta leggere il paper, mostrare le formule prendendole dal paper per l'ultima domanda
+dire che non si è stati in grado di calcolare beta
+far vedere i vanishing points trovati in entrambe le direzioni e le loro coordinate
+mostrare che il vanishing point non è in realtà al centro dell'immagine e spiegare i problemi correlati
+mostrare in ogni parte il codice associato
+distorsione fa in modo che un edge non sia straight e quindi la transform trova più rette su un solo edge, tutte quelle tangenti all'edge diventato curva -> rumore per l'algoritmo

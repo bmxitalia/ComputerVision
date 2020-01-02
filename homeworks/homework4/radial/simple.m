@@ -1,0 +1,1 @@
+imshowpair(imread('notCorrected1.png'),imread('notCorrected2.png'),'montage');

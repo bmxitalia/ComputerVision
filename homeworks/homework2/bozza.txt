@@ -1,0 +1,11 @@
+La prima far vedere l'immagine originale e due esempi di filtro, uno piccolo e uno più grande
+la seconda far vedere anche tre esempi e spiegare quando spiegato nelle slide e che non serve cambiare la filter size ma solo la std
+nell'ultima spiegare che a seconda di come i filtri vengono usati si possono ottenere risultati simili ma che in genere il gaussian è meglio -> mostrare i due risultati migliori
+
+far vedere le feature trovare nelle due immagini
+far vedere le feature trovate da noi e quelle di matlab, spiegare cosa c'è di male, alcune ambiguità e come si può migliorare -> con approccio migliore nelle slide o forse filtering prima
+far vedere anche il codice
+
+mostrare le due rappresentazioni richieste
+mostrare le quattro rappresentazioni richieste
+spiegare il fatto guardando le slides e la pagina linkata sugli esercizi

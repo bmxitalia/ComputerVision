@@ -1,0 +1,43 @@
+x =
+
+   4.6500e+05
+
+
+y =
+
+   4.6934e+05   soluzione 3 metri
+
+
+x =
+
+   4.6500e+05
+
+
+y =
+
+   4.6934e+05   soluzione 5 metri -> siccome si tratta di un punto e si perde l'informazione sulla scale
+che sia a 3 m o a 5 m la mappatura è la stessa
+
+soluzione 3
+
+x =
+
+   4.8171e+05
+
+
+y =
+
+   6.5952e+05
+
+soluzione 4
+
+x =
+
+   2.0159e+06
+
+
+y =
+
+   6.5952e+05   qui c'è da dire semplicemente che entrambe la 3 e la 4 hanno lo stesso orientamento della camera
+semplicemente l'oggetto è stato traslato nella stessa maniera per y e scale, e questo fa capire che
+la y non è cambiata. Mentre è stata cambiata la x e quindi il tutto è stato traslato a destra e infatti la x risulta di un ordine di grandezza più alto
